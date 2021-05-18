@@ -1,0 +1,5 @@
+The solver and the PostProcess can be build by running 
+
+bash Allwmake 
+
+present in the two directories

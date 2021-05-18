@@ -1,0 +1,12 @@
+echo Building solver for budgets
+ echo
+
+cd $(pwd)/SolversV1/heatTransfer/buoyantBoussinesqPimpleFoam
+
+
+wmake
+cd ..
+ echo 
+echo Finished... Solver name is budgetBuoyantBoussinesqPimpleFoam 
+
+ echo

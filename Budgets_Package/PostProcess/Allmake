@@ -1,0 +1,17 @@
+echo Building postProcess for Flow Budgets
+ echo
+
+cd $(pwd)/Flow_Budget
+
+bash Allmake_flow
+cd ..
+ echo 
+echo Building postProcess for Heat Budgets
+ echo
+
+cd $(pwd)/Heat_Budget
+bash Allmake_heat
+cd ..
+ echo
+echo Finished 
+

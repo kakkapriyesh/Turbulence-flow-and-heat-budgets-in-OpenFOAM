@@ -1,0 +1,18 @@
+#!/bin/sh
+
+ echo Building postProcess for Heat_flux
+ echo
+
+cd $(pwd)/Heat_flux
+wclean
+wmake
+
+ echo 
+echo Building postProcess for Temperature variance
+ echo
+
+cd $(pwd)/TT_budget
+wclean
+wmake
+
+

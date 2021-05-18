@@ -1,0 +1,22 @@
+echo calculating Convection budgets
+echo
+Convection_bud
+echo
+echo calculating dissipation_bud
+disspation_bud
+echo
+echo calculating Production_bud
+Production_bud
+echo
+echo calculating Turb_diffusion_bud
+Turb_diffusion_bud
+echo
+echo calculating Visc_diffusion_bud
+Visc_diffusion_bud
+echo
+echo calculating Hflux_budget
+Hflux_budget
+echo
+echo calculating TT_budget
+TT_budget
+echo

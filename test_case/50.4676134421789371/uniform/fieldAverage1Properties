@@ -1,0 +1,505 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "50.4676134421789371/uniform";
+    object      fieldAverage1Properties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+U
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+p
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+p_rgh
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+T
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+UT
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+PU
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+B
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+pPrime
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+UPrime
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+turbDiff
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+pressDiff
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+SGSstrainTensor
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+viscDiss
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+SGSDiff
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+SGSDiss
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+PD
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+PS
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+UUU
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+UUV
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+UUW
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+VVU
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+VVV
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+VVW
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+WWU
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+WWV
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+D
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+Tij
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+WWW
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+UVW
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+GradUP
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+tkeDiss
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+dissUV
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+dissUW
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+dissVW
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+TPrime
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+TU
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+TTDiss
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+TTU
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+GradTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+GradTUP
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+GradTUP1
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+GradTU
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+GradTV
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+GradTW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UUT
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+TGradp
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+MD1
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+MD2
+{
+    totalIter       6;
+    totalTime       0.6;
+}
+
+Gradp
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdiffuT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdiffvT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdiffwT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissuxT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissuyT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissuzT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissvxT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissvyT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissvzT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdisswxT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdisswyT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdisswzT
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdiffuTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdiffvTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdiffwTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissuxTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissuyTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissuzTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissvxTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissvyTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdissvzTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdisswxTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdisswyTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+SGSdisswzTP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+DP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+TijP
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+TTDissL
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+TTDiffL
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+MD1L
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+MD2L
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+GradTUPL
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+GradTUPL2
+{
+    totalIter       2;
+    totalTime       0.2;
+}
+
+
+// ************************************************************************* //

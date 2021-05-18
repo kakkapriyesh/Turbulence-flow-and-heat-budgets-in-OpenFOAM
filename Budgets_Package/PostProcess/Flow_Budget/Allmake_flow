@@ -1,0 +1,39 @@
+#!/bin/sh
+
+ echo Building postProcess for Convection
+ echo
+
+cd $(pwd)/Convec
+wclean
+wmake
+cd ..
+ echo 
+echo Building postProcess for Production
+ echo
+
+cd $(pwd)/Prod
+wclean
+wmake
+cd ..
+ echo 
+echo Building postProcess for Turbulent diffusion
+ echo
+
+cd $(pwd)/Tdiff
+wclean
+wmake
+cd ..
+ echo 
+echo Building postProcess for Viscous diffusion
+ echo
+
+cd $(pwd)/Vdiff
+wclean
+wmake
+cd ..
+ echo 
+echo Building postProcess for Dissipation
+ echo
+cd $(pwd)/Dissp
+wclean
+wmake

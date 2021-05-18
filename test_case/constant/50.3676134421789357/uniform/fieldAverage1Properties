@@ -1,0 +1,277 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "50.3676134421789357/uniform";
+    object      fieldAverage1Properties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+U
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+p
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+T
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UT
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+B
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+pPrime
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UPrime
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+turbDiff
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+pressDiff
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+SGSstrainTensor
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+viscDiss
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+SGSDiff
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+SGSDiss
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+PD
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+PS
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UUU
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UUV
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UUW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+VVU
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+VVV
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+VVW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+WWU
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+WWV
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+WWW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+UVW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+GradUP
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+tkeDiss
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+dissUV
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+dissUW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+dissVW
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+TPrime
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+TU
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+TTDiss
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+TTU
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+GradTUP
+{
+    totalIter       4;
+    totalTime       0.4;
+}
+
+GradTUP1
+{
+    totalIter       4;
+    totalTime       0.4;
+}
+
+GradTU
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+GradTV
+{
+    totalIter       4;
+    totalTime       0.4;
+}
+
+GradTW
+{
+    totalIter       4;
+    totalTime       0.4;
+}
+
+UUT
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+TGradp
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+MD1
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+MD2
+{
+    totalIter       5;
+    totalTime       0.5;
+}
+
+
+// ************************************************************************* //

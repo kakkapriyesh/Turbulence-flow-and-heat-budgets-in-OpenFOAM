@@ -1,0 +1,583 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     buoyantBoussinesqPimpleFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         400;
+
+deltaT          8E-6;
+
+writeControl    runTime;
+
+writeInterval    0.01;
+
+purgeWrite      3;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+maxCo 0.7;
+
+adjustTimeStep  yes;
+
+libs (
+	"libOpenFOAM.so"
+);
+
+// for calculating averages values
+
+functions
+{
+   fieldAverage1
+    {
+        type            fieldAverage;
+        libs            ("libfieldFunctionObjects.so");
+        enabled         true;
+        timeStart       0.35;
+        timeEnd        400;
+        writeControl    runTime;
+        writeInterval   0.01;
+        resetOnOutput 	false;
+
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+           p
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            p_rgh
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            T
+{
+mean on;
+prime2Mean on;
+base time;
+}
+nut
+{
+mean on;
+prime2Mean on;
+base time;
+}
+alphat
+{
+mean on;
+prime2Mean on;
+base time;
+}
+ UT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+PU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+B
+{
+mean on;
+prime2Mean off;
+base time;
+}
+pPrime
+{
+mean on;
+prime2Mean off;
+base time;
+}
+UPrime
+{
+mean on;
+prime2Mean on;
+base time;
+}
+turbDiff
+{
+mean on;
+prime2Mean off;
+base time;
+}
+pressDiff
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSstrainTensor
+{
+mean on;
+prime2Mean off;
+base time;
+}
+viscDiss
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSDiff
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSDiss
+{
+mean on;
+prime2Mean off;
+base time;
+}
+PD
+{
+mean on;
+prime2Mean off;
+base time;
+}
+PS
+{
+mean on;
+prime2Mean off;
+base time;
+}
+UUU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+UUV
+{
+mean on;
+prime2Mean off;
+base time;
+}
+UUW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+VVU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+VVV
+{
+mean on;
+prime2Mean off;
+base time;
+}
+VVW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+WWU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+WWV
+{
+mean on;
+prime2Mean off;
+base time;
+}
+D
+{
+mean on;
+prime2Mean off;
+base time;
+}
+Tij
+{
+mean on;
+prime2Mean off;
+base time;
+}
+WWW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+UVW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+GradUP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+tkeDiss
+{
+mean on;
+prime2Mean off;
+base time;
+}
+dissUV
+{
+mean on;
+prime2Mean off;
+base time;
+}
+dissUW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+dissVW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+TPrime
+{
+mean on;
+prime2Mean on;
+base time;
+}
+TU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+
+TTDiss
+{
+mean on;
+prime2Mean off;
+base time;
+}
+TTU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+  GradTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ GradTUP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ GradTUP1
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ GradTU
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ GradTV
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ GradTW
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ UUT
+{
+mean on;
+prime2Mean off;
+base time;
+} 
+TGradp
+{
+mean on;
+prime2Mean off;
+base time;
+} 
+MD1
+{
+mean on;
+prime2Mean off;
+base time;
+}
+MD2
+{
+mean on;
+prime2Mean off;
+base time;
+}
+Gradp
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdiffuT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdiffvT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdiffwT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissuxT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissuyT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissuzT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissvxT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissvyT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissvzT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdisswxT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdisswyT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdisswzT
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdiffuTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdiffvTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdiffwTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissuxTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissuyTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissuzTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissvxTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissvyTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdissvzTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdisswxTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdisswyTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+SGSdisswzTP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+DP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+TijP
+{
+mean on;
+prime2Mean off;
+base time;
+}
+ 
+TTDissL
+{
+mean on;
+prime2Mean off;
+base time;
+}
+TTDiffL
+{
+mean on;
+prime2Mean off;
+base time;
+}
+MD1L
+{
+mean on;
+prime2Mean off;
+base time;
+}
+MD2L
+{
+mean on;
+prime2Mean off;
+base time;
+}
+GradTUPL
+{
+mean on;
+prime2Mean off;
+base time;
+} 
+GradTUPL2
+{
+mean on;
+prime2Mean off;
+base time;
+} 
+
+
+
+ );
+   
+    }
+}
+
+
+// ************************************************************************* //

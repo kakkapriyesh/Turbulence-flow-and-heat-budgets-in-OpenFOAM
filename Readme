@@ -1,0 +1,29 @@
+The solver and the PostProcess can be build by running following command in the directory terminal
+
+"bash Allwmake "
+
+present in the PostProcess directory.
+
+To Run the solver, give the following command, 
+
+"bash Allmake"
+
+in Solver folder
+
+In the test case folder, run the following command to get all the results for different entities. 
+
+"Allmake_timefile"
+
+"budgetBuoyantBoussinesqPimpleFoam" is the solver name
+
+
+For reference in the budget papers folder:
+Use "Flow budget DNS " for all the flow budget terms, and "Flow budget LES" for extra budget terms due to LES (extra terms are not included in the postProcess but are included in the solver calculation which are termed as SGS terms)
+
+ControlDict and fvschemes can be used for calculating all the files.
+
+
+
+
+
+
