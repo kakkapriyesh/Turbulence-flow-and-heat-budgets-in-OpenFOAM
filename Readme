@@ -1,4 +1,4 @@
-The solver and the PostProcess can be build by running following command in the directory terminal
+The solver and the PostProcess can be built by running following command in the directory terminal
 
 "bash Allwmake "
 
