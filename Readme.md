@@ -1,5 +1,6 @@
 Turbulence flow and heat flux budgets for LES/DNS in an OpenFOAM solver
 =====================================================================
+[![DOI](https://zenodo.org/badge/368479876.svg)](https://zenodo.org/badge/latestdoi/368479876)
 
 The solver is written in OpenFOAM 6. xx, enabling on-the-fly calculation of terms required to calculate budgets. It also contains a postprocessing tool to calculate the necessary gradients for the field's complete flow and heat flux budgets. Please look at test_case and the following commands for an example of running this solver.
 
