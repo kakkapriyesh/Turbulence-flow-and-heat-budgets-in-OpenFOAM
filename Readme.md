@@ -29,7 +29,7 @@ The solver is named "budgetBuoyantBoussinesqPimpleFoam"
 
 Controldict and fvschemes files are given for reference.
 
-Please cite this work in the following paper.
+Please cite this paper if the code is usefult to you.
 
 Kakka, Priyesh, and Kameswararao Anupindi. "Assessment of subgrid-scale models for large-eddy simulation of a planar turbulent wall-jet with heat transfer." International Journal of Heat and Mass Transfer 153 (2020): 119593. https://doi.org/10.1016/j.ijheatmasstransfer.2020.119593
 
