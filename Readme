@@ -1,7 +1,8 @@
 The solver and the PostProcess can be built by running following command in the directory terminal
 
+'''
 "bash Allwmake "
-
+'''
 present in the PostProcess directory.
 
 To Run the solver, give the following command, 
