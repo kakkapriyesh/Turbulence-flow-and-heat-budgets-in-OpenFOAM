@@ -33,6 +33,7 @@ Allmake_timefile
 
 Solver is named as "budgetBuoyantBoussinesqPimpleFoam" 
 
+Controldict and fvschemes files are given for reference.
 
 I have additional python scripts to create line plots for these budgets (Please contact me at kakkapriyesh@hotmail.com) if you want it. 
 Please let me know
