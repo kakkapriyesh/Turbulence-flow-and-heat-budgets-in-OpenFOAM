@@ -1,27 +1,44 @@
-The solver and the PostProcess can be built by running following command in the directory terminal
 
-'''
-"bash Allwmake "
-'''
-present in the PostProcess directory.
+Turbulence flow and heat flux budgets for LES in an OpenFOAM solver
+=====================================================================
 
-To Run the solver, give the following command, 
+The solver is written in OpenFOAM 6.xx and it enables on the fly calculation of terms required to calculate budgets. It also contains a postprocessing tool to
+enable the calculation of gradients requried for calculating complete flow and heatflux budgets in the entire field. Please look at test_case and following commands for an example on how to run this solver.
 
-"bash Allmake"
+Please cite this work with the following paper
 
-in Solver folder
+Kakka, Priyesh, and Kameswararao Anupindi. "Assessment of subgrid-scale models for large-eddy simulation of a planar turbulent wall-jet with heat transfer." International Journal of Heat and Mass Transfer 153 (2020): 119593.
+
+
+The solver and the PostProcess can be built by running following commands in the postprocess directory.
+
+```bash
+Allwmake
+```
+
+
+
+To Run the solver, give the following command in the solver folder
+
+```bash
+Allmake
+```
+
 
 In the test case folder, run the following command to get all the results for different entities. 
 
-"Allmake_timefile"
+```bash
+Allmake_timefile
+```
 
-"budgetBuoyantBoussinesqPimpleFoam" is the solver name
+Solver is named as "budgetBuoyantBoussinesqPimpleFoam" 
 
 
-For reference in the budget papers folder:
-Use "Flow budget DNS " for all the flow budget terms, and "Flow budget LES" for extra budget terms due to LES (extra terms are not included in the postProcess but are included in the solver calculation which are termed as SGS terms)
+I have additional python scripts to create line plots for these budgets (Please contact me at kakkapriyesh@hotmail.com) if you want it. 
+Please let me know
+if you have any questions. 
 
-ControlDict and fvschemes can be used for calculating all the files.
+
 
 
 
